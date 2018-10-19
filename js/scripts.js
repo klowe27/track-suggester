@@ -1,6 +1,4 @@
 $(document).ready(function(){
-  // $("#name-group").addClass(".has-error");
-
   $("#interests").submit(function(event){
     event.preventDefault();
     var name = $("input#name").val();
@@ -34,8 +32,8 @@ $(document).ready(function(){
         $("#helpBlock5").show();
       }
     } else if (environment !== "small" && preference === "backend") {
-    $(".c").slideDown();
-    } else if (environment !== "small" &&preference === "variety") {
+      $(".c").slideDown();
+    } else if (environment !== "small" && preference === "variety") {
       $(".php").slideDown();
     } else {
       $(".ruby").slideDown();
