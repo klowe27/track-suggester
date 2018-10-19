@@ -10,10 +10,10 @@ $(document).ready(function(){
     var adjective = $("input:radio[name=adjective]:checked").val();
 
     $(".result").hide();
-    $(".error-border").hide();
-    $(".error").hide();
-    $(".help-block").hide();
     $(".name").empty().append(name);
+    $(".error-border").removeClass();
+    $(".error").removeClass();
+    $(".help-block").hide();
 
     if (!name || !experience || !preference || !environment || !adjective) {
       $("#helpBlock1").show();
