@@ -8,16 +8,16 @@ $(document).ready(function(){
     var adjective = $("input:radio[name=adjective]:checked").val();
 
     $(".result").hide();
+    $(".name").empty().append(name);
 
-    if (environment !== "small" && preference === "backend") {
+    if (name === "") {
+      alert("Please enter your name.");
+    } else if (environment !== "small" && preference === "backend") {
       $(".c").show();
-      $(".name").empty().append(name);
-    } else if (preference === "variety" && environment !== "small") {
+    } else if (environment !== "small" &&preference === "variety") {
       $(".php").show();
-      $(".name").empty().append(name);
     } else {
       $(".ruby").show();
-      $(".name").empty().append(name);
     }
   });
 });
