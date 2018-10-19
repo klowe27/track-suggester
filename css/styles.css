@@ -46,6 +46,11 @@ div.result h3 {
   font-style: italic;
 }
 
-.error {
+.error-border {
   border: solid 1px red;
+}
+
+.error {
+  background-color: #F8F8F8;
+  padding: 30px;
 }

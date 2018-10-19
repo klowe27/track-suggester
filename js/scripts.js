@@ -10,13 +10,28 @@ $(document).ready(function(){
     var adjective = $("input:radio[name=adjective]:checked").val();
 
     $(".result").hide();
+    $(".error-border").hide();
+    $(".error").hide();
+    $(".help-block").hide();
     $(".name").empty().append(name);
 
     if (!name || !experience || !preference || !environment || !adjective) {
       $("#helpBlock1").show();
       if (!name) {
-        alert("enter name");
-        // $("#input#name").addClass(".error");
+        $("input#name").addClass("error-border");
+        $("#helpBlock2").show();
+      }
+      if (!preference) {
+        $("#preference").addClass("error");
+        $("#helpBlock3").show();
+      }
+      if (!environment) {
+        $("#environment").addClass("error");
+        $("#helpBlock4").show();
+      }
+      if (!adjective) {
+        $("#adjective").addClass("error");
+        $("#helpBlock5").show();
       }
     } else if (environment !== "small" && preference === "backend") {
     $(".c").show();

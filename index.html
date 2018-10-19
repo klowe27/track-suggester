@@ -10,13 +10,14 @@
   <body>
     <div class="container">
       <h1>Track Suggester</h1>
-      <p>Epicodus offers a variety of tracks. Fill out this form to see which track is best for you.</p>
+      <p>Epicodus offers a variety of tracks. Take this survey to see which track is best for you.</p>
 
       <form id="interests">
 
         <div id="name-group" class="form-group">
           <label for="name">Name:</label>
           <input id="name" type="text" class="form-control"></input>
+          <span id="helpBlock2" class="help-block">Please enter your name.</span>
         </div>
 
         <div class="form-group">
@@ -27,7 +28,7 @@
           </select>
         </div>
 
-        <div class="form-group">
+        <div id="preference" class="form-group">
           <label for"preference">What sounds most interesting to you?</label>
           <div class="radio">
             <label>
@@ -44,9 +45,10 @@
               <input type="radio" name="preference" value="backend">  Working behind the scenes on one feature of a complex product
             </label>
           </div>
+          <span id="helpBlock3" class="help-block">Please select one.</span>
         </div>
 
-        <div class="form-group">
+        <div id="environment" class="form-group">
           <label for"environment">What environment would you thrive in?</label>
           <div class="radio">
             <label>
@@ -63,9 +65,10 @@
               <input type="radio" name="environment" value="large">  A large company with clear processes, and mature, stable products
             </label>
           </div>
+          <span id="helpBlock4" class="help-block">Please select one.</span>
         </div>
 
-        <div class="form-group">
+        <div id="adjective" class="form-group">
           <label for"adjective">Which adjective best describes you?</label>
           <div class="radio">
             <label>
@@ -82,6 +85,7 @@
               <input type="radio" name="adjective" value="methodical">  Methodical
             </label>
           </div>
+          <span id="helpBlock5" class="help-block">Please select one.</span>
         </div>
 
         <button type="submit">See Results</button>
