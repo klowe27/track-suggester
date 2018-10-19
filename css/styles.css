@@ -29,6 +29,10 @@ button {
   padding: 10px;
 }
 
+button:hover {
+  background-color: #2F4F4F;
+}
+
 .result {
   display: none;
   background-color: #00b3b4;
