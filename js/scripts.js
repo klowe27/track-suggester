@@ -1,4 +1,35 @@
 $(document).ready(function(){
+  $("#name-group").mouseover(function() {
+    $("#name-group").addClass("highlight");
+  });
+  $("#name-group").mouseout(function() {
+    $("#name-group").removeClass("highlight");
+  });
+  $("#experience-group").mouseover(function() {
+    $("#experience-group").addClass("highlight");
+  });
+  $("#experience-group").mouseout(function() {
+    $("#experience-group").removeClass("highlight");
+  });
+  $("#preference").mouseover(function() {
+    $("#preference").addClass("highlight");
+  });
+  $("#preference").mouseout(function() {
+    $("#preference").removeClass("highlight");
+  });
+  $("#environment").mouseover(function() {
+    $("#environment").addClass("highlight");
+  });
+  $("#environment").mouseout(function() {
+    $("#environment").removeClass("highlight");
+  });
+  $("#adjective").mouseover(function() {
+    $("#adjective").addClass("highlight");
+  });
+  $("#adjective").mouseout(function() {
+    $("#adjective").removeClass("highlight");
+  });
+
   $("#interests").submit(function(event){
     event.preventDefault();
     var name = $("input#name").val();
@@ -16,6 +47,7 @@ $(document).ready(function(){
     if (!name || !experience || !preference || !environment || !adjective) {
       $("#helpBlock1").show();
       if (!name) {
+        $("#name-group").addClass("error");
         $("input#name").addClass("error-border");
         $("#helpBlock2").show();
       }

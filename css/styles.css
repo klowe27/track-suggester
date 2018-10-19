@@ -1,10 +1,10 @@
 body {
-  background-color: #F8F8F8;
+  background-color: #E8E8E8;
 }
 
 .container {
   padding: 70px;
-  background-color: white;
+  background-color: #F8F8F8;
 }
 
 h1 {
@@ -23,6 +23,11 @@ h1 {
 label.question {
   font-weight: bold;
   color: #00b3b4;
+}
+
+.form-group {
+  padding-top: 10px;
+  padding-bottom: 15px;
 }
 
 button {
@@ -58,6 +63,17 @@ div.result h3 {
 }
 
 .error {
-  background-color: #F8F8F8;
-  padding: 30px;
+  background-color: #F0F0F0;
+  margin-left: -70px;
+  padding-left: 70px;
+  margin-right: -70px;
+  padding-right: 70px;
+}
+
+.highlight {
+  background-color: #e5f7f7;
+  margin-left: -70px;
+  padding-left: 70px;
+  margin-right: -70px;
+  padding-right: 70px;
 }
