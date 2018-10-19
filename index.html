@@ -10,18 +10,18 @@
   <body>
     <div class="container">
       <h1>Track Suggester</h1>
-      <p>Epicodus offers a variety of tracks. Take this survey to see which track is best for you.</p>
+      <p class="well">Epicodus offers a variety of tracks. Take this survey to see which track is best for you.</p>
 
       <form id="interests">
 
         <div id="name-group" class="form-group">
-          <label for="name">Name:</label>
+          <label for="name" class="question">Name:</label>
           <input id="name" type="text" class="form-control"></input>
           <span id="helpBlock2" class="help-block">Please enter your name.</span>
         </div>
 
         <div class="form-group">
-          <label for="experience">Do you have any previous coding experience?</label>
+          <label for="experience" class="question">Do you have any previous coding experience?</label>
           <select class="form-control" id="experience">
             <option>No</option>
             <option>Yes</option>
@@ -29,7 +29,7 @@
         </div>
 
         <div id="preference" class="form-group">
-          <label for"preference">What sounds most interesting to you?</label>
+          <label for"preference" class="question">What sounds most interesting to you?</label>
           <div class="radio">
             <label>
               <input type="radio" name="preference" value="interactive">  Designing interactive webpages for users
@@ -49,7 +49,7 @@
         </div>
 
         <div id="environment" class="form-group">
-          <label for"environment">What environment would you thrive in?</label>
+          <label for"environment" class="question">What environment would you thrive in?</label>
           <div class="radio">
             <label>
               <input type="radio" name="environment" value="small">  A small, agile company working on exciting projects in a fast-paced environment
@@ -69,7 +69,7 @@
         </div>
 
         <div id="adjective" class="form-group">
-          <label for"adjective">Which adjective best describes you?</label>
+          <label for"adjective" class="question">Which adjective best describes you?</label>
           <div class="radio">
             <label>
               <input type="radio" name="adjective" value="creative">  Creative
@@ -93,19 +93,19 @@
       <span id="helpBlock1" class="help-block">Make sure you've answered all the questions.</span>
 
       <div class="result ruby">
-        <h3>Intro/Ruby/Javascript/Rails</h3>
+        <h3>Intro/Ruby/JavaScript/Rails</h3>
         <p><span class="name"></span>, based on your responses, the ruby/rails track sounds like a great fit for you. Ruby is a great language to learn if you're new to programming and is popular with startups and smaller companies who are looking to build their product quickly.</p>
         <p>All Epicodus tracks include an intro to programming course to expose you to the basics of programming and a JavaScript course; JavaScript is one of the most popular languages today due to its versatility.</p>
       </div>
 
       <div class="result php">
-        <h3>Intro/PHP/Javascript/Drupal</h3>
+        <h3>Intro/PHP/JavaScript/Drupal</h3>
         <p><span class="name"></span>, based on your responses, the PHP/Drupal track sounds like a great fit for you. PHP is the most popular backend language today. It's used for large complex sites and small sites for brands and businesses.</p>
         <p>All Epicodus tracks include an intro to programming course to expose you to the basics of programming and a JavaScript course; JavaScript is one of the most popular languages today due to its versatility.</p>
       </div>
 
       <div class="result c">
-        <h3>Intro/C#/Javascript/.NET</h3>
+        <h3>Intro/C#/JavaScript/.NET</h3>
         <p><span class="name"></span>, based on your responses, the C#/.NET track sounds like a great fit for you. C# is popular among larger, established companies and is one of the most in-demand languages.</p>
         <p>All Epicodus tracks include an intro to programming course to expose you to the basics of programming and a JavaScript course; JavaScript is one of the most popular languages today due to its versatility.</p>
       </div>
