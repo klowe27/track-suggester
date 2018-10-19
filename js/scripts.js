@@ -34,11 +34,11 @@ $(document).ready(function(){
         $("#helpBlock5").show();
       }
     } else if (environment !== "small" && preference === "backend") {
-    $(".c").show();
+    $(".c").slideDown();
     } else if (environment !== "small" &&preference === "variety") {
-      $(".php").show();
+      $(".php").slideDown();
     } else {
-      $(".ruby").show();
+      $(".ruby").slideDown();
     }
   });
 });
