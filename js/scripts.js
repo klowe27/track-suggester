@@ -1,4 +1,6 @@
 $(document).ready(function(){
+  // $("#name-group").addClass(".has-error");
+
   $("#interests").submit(function(event){
     event.preventDefault();
     var name = $("input#name").val();
@@ -10,7 +12,9 @@ $(document).ready(function(){
     $(".result").hide();
     $(".name").empty().append(name);
 
-    if (environment !== "small" && preference === "backend") {
+    if (name === "") {
+      $("#helpBlock1").show();
+    } else if (environment !== "small" && preference === "backend") {
     $(".c").show();
     } else if (environment !== "small" &&preference === "variety") {
       $(".php").show();

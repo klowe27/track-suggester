@@ -39,3 +39,9 @@ button {
 div.result h3 {
   color: white;
 }
+
+.help-block {
+  color: red;
+  display: none;
+  font-style: italic;
+}
