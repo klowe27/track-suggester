@@ -12,8 +12,12 @@ $(document).ready(function(){
     $(".result").hide();
     $(".name").empty().append(name);
 
-    if (name === "") {
+    if (!name || !experience || !preference || !environment || !adjective) {
       $("#helpBlock1").show();
+      if (!name) {
+        alert("enter name");
+        // $("#input#name").addClass(".error");
+      }
     } else if (environment !== "small" && preference === "backend") {
     $(".c").show();
     } else if (environment !== "small" &&preference === "variety") {
