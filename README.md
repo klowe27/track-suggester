@@ -23,11 +23,7 @@ If you run into any issues or have questions, please contact me at kristin.lowe1
 
 ## Technologies Used
 
-JavaScript
-jQuery
-HTML
-CSS
-Bootstrap
+JavaScript, jQuery, HTML, CSS, and Bootstrap
 
 ### License
 
