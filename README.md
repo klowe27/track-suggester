@@ -10,6 +10,7 @@ Epicodus is a vocational school where students learn to code. They offer several
 
 ## Setup/Installation Requirements
 
+* View website directly here: https://klowe27.github.io/track-suggester/
 * Clone this project in the terminal using command $ git clone https://github.com/klowe27/track-suggester
 * Open index.html file in any web browser
 
