@@ -10,7 +10,81 @@
   <body>
     <div class="container">
       <h1>Track Suggester</h1>
+      <p>Epicodus offers a variety of tracks. Fill out this form to see which track is best for you.</p>
+      <form id="interests">
 
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input id="name" type="text" class="form-control"></input>
+        </div>
+
+        <div class="form-group">
+          <label for="experience">Do you have any previous coding experience?</label>
+          <select class="form-control" id="experience">
+            <option>Yes</option>
+            <option>No</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for"technology">What sounds most interesting to you?</label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="technology" value="interactive">  Designing interactive webpages for users.
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="technology" value="flexible">  A combination of work that includes both complex behind-the-scenes work and smaller projects like websites. 
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="technology" value="backend">  Working behind the scenes on one feature of a complex product.
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for"environment">What environment would you thrive in?</label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="environment" value="small">  A small, agile company working on exciting projects in a fast-paced environment.
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="environment" value="medium">  A medium-sized company with some innovative technology, but a lot of stability.
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="environment" value="large">  A large company with clear processes, and mature, stable products.
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for"environment">Which adjective best describes you?</label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="adjective" value="creative">  Creative
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="adjective" value="inquisitive">  Inquisitive
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="adjective" value="methodical">  Methodical
+            </label>
+          </div>
+        </div>
+
+        <button type="submit" class="btn-primary">See Results</button>
+      </form>
     </div>
   </body>
 </html>
