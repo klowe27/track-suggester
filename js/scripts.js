@@ -10,10 +10,8 @@ $(document).ready(function(){
     $(".result").hide();
     $(".name").empty().append(name);
 
-    if (name === "") {
-      alert("Please enter your name.");
-    } else if (environment !== "small" && preference === "backend") {
-      $(".c").show();
+    if (environment !== "small" && preference === "backend") {
+    $(".c").show();
     } else if (environment !== "small" &&preference === "variety") {
       $(".php").show();
     } else {
