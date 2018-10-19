@@ -11,8 +11,8 @@ $(document).ready(function(){
 
     $(".result").hide();
     $(".name").empty().append(name);
-    $(".error-border").removeClass();
-    $(".error").removeClass();
+    $(".error-border").removeClass("error-border");
+    $(".error").removeClass("error");
     $(".help-block").hide();
 
     if (!name || !experience || !preference || !environment || !adjective) {
