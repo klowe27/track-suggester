@@ -1,13 +1,13 @@
-$(document).ready(function(){
-  function mouseOver(id) {
-    $(id).mouseover(function(){
-      $(id).addClass("highlight");
-    });
-    $(id).mouseout(function(){
-      $(id).removeClass("highlight");
-    });
-  }
+function mouseOver(id) {
+  $(id).mouseover(function(){
+    $(id).addClass("highlight");
+  });
+  $(id).mouseout(function(){
+    $(id).removeClass("highlight");
+  });
+}
 
+$(document).ready(function(){
   mouseOver("#name-group");
   mouseOver("#experience-group");
   mouseOver("#preference");

@@ -30,6 +30,14 @@ label.question {
   padding-bottom: 15px;
 }
 
+.highlight {
+  background-color: #e5f7f7;
+  margin-left: -70px;
+  padding-left: 70px;
+  margin-right: -70px;
+  padding-right: 70px;
+}
+
 button {
   background-color: #00b3b4;
   color: white;
@@ -64,14 +72,6 @@ div.result h3 {
 
 .error {
   background-color: #F0F0F0;
-  margin-left: -70px;
-  padding-left: 70px;
-  margin-right: -70px;
-  padding-right: 70px;
-}
-
-.highlight {
-  background-color: #e5f7f7;
   margin-left: -70px;
   padding-left: 70px;
   margin-right: -70px;
