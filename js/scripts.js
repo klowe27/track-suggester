@@ -9,10 +9,10 @@ $(document).ready(function(){
 
     $(".result").hide();
 
-    if (environment === "large" || preference === "backend") {
+    if (environment !== "small" && preference === "backend") {
       $(".c").show();
       $(".name").empty().append(name);
-    } else if (preference === "flexible") {
+    } else if (preference === "variety" && environment !== "small") {
       $(".php").show();
       $(".name").empty().append(name);
     } else {
